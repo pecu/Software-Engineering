@@ -1,0 +1,38 @@
+.block{
+  background:#aabbcc;
+  width:100%;
+  height:300px;
+  margin:5px;
+}
+#header{
+  width:100%;
+  height:50px;
+}
+#menu{
+  background:#ffffff;
+  height:200px;
+}
+#middle{
+  position:relative;
+}
+.box{
+  position:
+  background:#252525;
+  margin:2px;
+}
+
+.imgbox{
+  width:30%;
+  height:205px;
+  display:inline-block;
+  background:#ffffff;
+  margin:-1px;
+}
+#footer{
+  height:70px;
+  
+}
+.button{
+  color:#123456;
+  
+}
