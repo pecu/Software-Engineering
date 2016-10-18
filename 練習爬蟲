@@ -1,0 +1,18 @@
+rm(list=ls(all.names=TRUE))
+library(XML)
+library(RCurl)
+library(httr)
+
+urlPath <- "http://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi?o=dnclcdr&s=%22%E5%BC%B5%E7%91%9E%E9%9B%84%22.ad.&searchmode=basic#result"
+temp    <- getURL(urlPath, encoding = "big5")
+xmldoc  <- htmlParse(temp)
+title   <- xpathSApply(xmldoc, "//span[@class=\"etd_d\"]", xmlValue)
+
+
+  alltitle = data.frame()
+  tempURL2 = "http://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi?o=dnclcdr&s=id=%22102NKIT5079031%22.&searchmode=basic"
+  temp     = getURL(tempURL2, encoding = "big5")
+  xmlData  = htmlParse(temp) 
+  Pcontent = xpathSApply(xmlData, "//td[@class=\"std2\"]/a//@title")
+  subtitle = data.frame(Pcontent)
+  alltitle = rbind(alltitle, subtitle)
