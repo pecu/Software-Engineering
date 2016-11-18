@@ -7,7 +7,7 @@ function gigi(){
 			console.log(d.Open);
 		});
 
-		var hshift = -800;
+		var hshift = -100;
 		var maxy = d3.max(data, function(d) { return d.Open; });
 		var ln = data.length;
 		var ctrl  = d3.select(".featured").append("svg").attr("width", width).attr("height", height);
