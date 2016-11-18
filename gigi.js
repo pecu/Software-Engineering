@@ -1,6 +1,6 @@
 function gigi(){
-	var width  = 1024;
-	var height = 800; 
+	var width  = 460;
+	var height = 872; 
 	d3.csv("https://gigigirl.github.io/Software-Engineering/table.csv", function(data) {
 		console.log(data);
 		data.forEach(function(d) {
