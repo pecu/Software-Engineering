@@ -38,8 +38,8 @@
         .attr("fill",color)
         .attr("stroke-width",1)
   }
-  var svgrect = d3.select(".newsletter").append("svg")
-       .attr("height",227)
+  var svgrect = d3.select(".featured").append("svg")
+       .attr("height",520)
        .attr("width",460);
   pologonWord(polygonDataI,"brown");
   pologonWord(polygonDataD1,"black");
