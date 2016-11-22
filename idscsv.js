@@ -27,16 +27,16 @@
 
   d3.csv(polygonDataI),function(data){
     pologonWord(data,"brown");
-  };
+  });
   d3.csv(polygonDataD1),function(data){
     pologonWord(data,"black");
-  };
+  });
   d3.csv(polygonDataD2),function(data){
     pologonWord(data,"black");
-  };
+  });
   d3.csv(polygonDataS),function(data){
     pologonWord(data,"purple");
-  };
+  });
 
 }
 
