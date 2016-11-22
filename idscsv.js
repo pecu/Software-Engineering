@@ -13,8 +13,8 @@
        //.attr("height",320)
        //.attr("width",130);
    var polygonFunction = d3.line()
-         .x(function(d) { return d.x; })
-         .y(function(d) { return d.y; });
+         .x(function(d) { return d.size; })
+         .y(function(d) { return d.text; });
    var pologon = svgrect.append("path")
         .attr("d",polygonFunction(I))
         .attr("stroke","none")
