@@ -15,7 +15,6 @@
         .attr("stroke","none")
         .attr("fill",color)
         .attr("stroke-width",1)
-  }
   var svgrect = d3.select("body").append("svg")
        .attr("height",227);
        .attr("width",460);
@@ -23,6 +22,7 @@
   // pologonWord(polygonDataD1,"black");
   // pologonWord(polygonDataD2,"purple");
   // pologonWord(polygonDataS,"purple");
-});
+ );
+}
 
 
