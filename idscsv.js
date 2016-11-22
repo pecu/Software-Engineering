@@ -22,7 +22,7 @@
         .attr("stroke-width",1)
 
   }
-    var svgrect = d3.select("body").append("svg")
+    var svgrect = d3.select(".featured").append("svg")
        .attr("height",227);
        .attr("width",460);
 
