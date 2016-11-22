@@ -25,16 +25,16 @@
        .attr("width",460);
 
 
-  d3.csv(polygonDataI),function(data){
+  d3.csv(polygonDataI,function(data){
     pologonWord(data,"brown");
   });
-  d3.csv(polygonDataD1),function(data){
+  d3.csv(polygonDataD1,function(data){
     pologonWord(data,"black");
   });
-  d3.csv(polygonDataD2),function(data){
+  d3.csv(polygonDataD2,function(data){
     pologonWord(data,"black");
   });
-  d3.csv(polygonDataS),function(data){
+  d3.csv(polygonDataS,function(data){
     pologonWord(data,"purple");
   });
 
