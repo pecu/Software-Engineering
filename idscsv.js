@@ -20,27 +20,26 @@
         .attr("stroke","none")
         .attr("fill",color)
         .attr("stroke-width",1)
-  }
 
-  d3.csv(pologonWord(polygonDataI,"brown"),function(data){
-      var svgrect = d3.select("body").append("svg")
+  }
+    var svgrect = d3.select("body").append("svg")
        .attr("height",227);
        .attr("width",460);
-  });
-  d3.csv(pologonWord(polygonDataD1,"black"),function(data){
-      var svgrect = d3.select("body").append("svg")
-       .attr("height",227);
-       .attr("width",460);
-  });
-  d3.csv(pologonWord(polygonDataD2,"purple"),function(data){
-      var svgrect = d3.select("body").append("svg")
-       .attr("height",227);
-       .attr("width",460);
-  });
-  d3.csv(pologonWord(polygonDataS,"purple"),function(data){
-      var svgrect = d3.select("body").append("svg")
-       .attr("height",227);
-       .attr("width",460);
-  });
- }
-  
+
+
+  d3.csv(polygonDataI),function(data){
+    pologonWord(data,"brown");
+  };
+  d3.csv(polygonDataD1),function(data){
+    pologonWord(data,"black");
+  };
+  d3.csv(polygonDataD2),function(data){
+    pologonWord(data,"black");
+  };
+  d3.csv(polygonDataS),function(data){
+    pologonWord(data,"purple");
+  };
+
+}
+
+
