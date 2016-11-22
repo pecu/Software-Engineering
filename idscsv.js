@@ -1,11 +1,9 @@
 
  function IDS(){
-  var polygonDataI="https://gigigirl.github.io/Software-Engineering/dataI.csv"
-
-  var polygonDataD1="https://gigigirl.github.io/Software-Engineering/dataD1.csv"
-  var polygonDataD2="https://gigigirl.github.io/Software-Engineering/dataD2.csv"
-
-  var polygonDataS="https://gigigirl.github.io/Software-Engineering/dataS.csv"
+  var polygonDataI="https://gigigirl.github.io/Software-Engineering/dataI.csv";
+  var polygonDataD1="https://gigigirl.github.io/Software-Engineering/dataD1.csv";
+  var polygonDataD2="https://gigigirl.github.io/Software-Engineering/dataD2.csv";
+  var polygonDataS="https://gigigirl.github.io/Software-Engineering/dataS.csv";
 
   function pologonWord(I,color)
   {
